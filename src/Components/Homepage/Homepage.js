@@ -1,17 +1,14 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar'
+import Navbar from '../Navbar/Navbar';
+import PopularItems from '../PopularItems/PopularItems';
 import './Homepage.css';
+import '../../App.css';
 
 const Homepage = () => {
     return(
-        <div className='homepage-container'>
-            <div>
+        <div>
             <Navbar />
-            </div>
-          
-            <div>
-            <p>Welcome to the Bright Market</p>
-            </div>
+            <PopularItems />
         </div>
     );
 }
