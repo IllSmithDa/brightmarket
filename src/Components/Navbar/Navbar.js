@@ -42,9 +42,9 @@ export default class Navbar extends Component {
               <div className="dropdown">
                 <button className="dropdown-button">{shopCategory} &#x25BE; </button>
                 <div className="dropdown-content">
-                  <a className="dropdown-item" onClick={() => {this.setCategory('Computers')}}> Computers</a>
-                  <a className="dropdown-item" onClick={() => {this.setCategory('Tablets')}}> Tablets</a>
-                  <a className="dropdown-item" onClick={() => {this.setCategory('Laptops')}}> Laptops</a>
+                  <a href="#computers" className="dropdown-item" onClick={() => {this.setCategory('Computers')}}> Computers</a>
+                  <a href="#tablets" className="dropdown-item" onClick={() => {this.setCategory('Tablets')}}> Tablets</a>
+                  <a href="#laptops" className="dropdown-item" onClick={() => {this.setCategory('Laptops')}}> Laptops</a>
                 </div>
               </div>
               <input onChange={this.updateTerm} className="search-input" onKeyDown={this.onKeyPressed} />
